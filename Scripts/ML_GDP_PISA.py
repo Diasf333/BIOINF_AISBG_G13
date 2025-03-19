@@ -4,7 +4,7 @@ from sklearn.impute import KNNImputer
 from sklearn.preprocessing import StandardScaler
 
 #Carregar os dados
-df = pd.read_csv("C:/Users/BioInf_Andre/OneDrive - Universidade do Minho/Documentos/resultado_finalllll.csv")
+df = pd.read_csv("C:/Users/User/Documentos/resultado_finalllll.csv")
 
 #Identificar valores NaN
 print("Valores NaN antes da imputação:\n", df.isna().sum())
@@ -37,5 +37,5 @@ df_imputed[colunas_imputadas] = df_imputed[colunas_imputadas].applymap(lambda x:
 #Verificar se os NaN foram preenchidos
 print("\nValores NaN após a imputação:\n", df_imputed.isna().sum())
 
-df_imputed.to_csv("C:/Users/BioInf_Andre/OneDrive - Universidade do Minho/Documentos/gdp_pisa_no_NA.csv", index=False)
-print("\n✅ Ficheiro 'dados_imputados.csv' salvo com sucesso!")
+df_imputed.to_csv("C:/Users/User/Documentos/gdp_pisa_no_NA.csv", index=False)
+print("\n Ficheiro 'gdp_pisa_no_NA.csv' salvo com sucesso!")
