@@ -18,8 +18,13 @@ The work focused on analyzing the relationship between GDP (Gross Domestic Produ
   - Imputed scores were rounded and converted into integers.
 
 ### 3. **Creation of New Variables**
-- Mean scores were calculated for Mathematics, Science, and Reading for the years 2012, 2015, and 2018.
-- The means were rounded to three decimal places to maintain precision without compromising readability.
+- **A total of six new columns have been added to the original dataset: "Means_Maths", "Means_Science", "Means_Reading", "Mean_2012", "Mean_2015", and "Mean_2018".**
+
+  - The first three columns ("Means_Maths", "Means_Science", "Means_Reading") represent the average score for each subject across the three years (2012, 2015, and 2018). These values were calculated as the mean of the scores for each discipline over the three evaluation years.
+The last three columns ("Mean_2012", "Mean_2015", "Mean_2018") represent the overall average for each year, calculated as the mean of Mathematics, Science, and Reading scores for that specific year.
+As a result, the updated dataset now includes, in addition to the original columns, these six new variables that provide both a subject-wise and year-wise aggregated view of each country's average performance.
+
+  - The means were rounded to three decimal places to maintain precision without compromising readability.
 
 ### 4. **Machine Learning Model for Filling Missing Data**
 - A **RandomForestRegressor** was used to predict and fill missing score values.
