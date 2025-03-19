@@ -1,14 +1,14 @@
 1. Analysis Objective
 
-  The work focused on analyzing the relationship between GDP (Gross Domestic Product) and PISA (Programme for International Student Assessment) scores for 15-year-old students across different years. Techniques such as data cleaning, estimation, and machine learning were applied to improve data quality and enable a more robust analysis.
+*  The work focused on analyzing the relationship between GDP (Gross Domestic Product) and PISA (Programme for International Student Assessment) scores for 15-year-old students across different years. Techniques such as data cleaning, estimation, and machine learning were applied to improve data quality and enable a more robust analysis.
 
 2. Data Cleaning and Estimation
 
- Identification and treatment of missing values (NaN):
+*  Identification and treatment of missing values (NaN):
 
-  An initial check was performed to identify missing values.
+**  An initial check was performed to identify missing values.
 
-  The KNN Imputer (K=5) was applied to fill NaN values, ensuring the dataset was more complete for analysis.
+**  The KNN Imputer (K=5) was applied to fill NaN values, ensuring the dataset was more complete for analysis.
 
   Imputed values were converted to integers when necessary to maintain data consistency.
 
