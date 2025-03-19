@@ -1,11 +1,12 @@
 # BIOINF_AISBG
+Group 13
 
-Grupo 13
+Repository created by:
 
-Repositorio criado por:
+- André Dias Ferreira - PG55127
+- André Sá Gomes - A97401
+- João Manuel Barbosa Lima - PG55701
+- 
+This repository was created as part of the course "Intelligent Analysis in Big Data Systems" in the Master's program in Bioinformatics during the 2024-2025 academic year.
 
-*  André Dias Ferreira - PG55127
-*  André Sá Gomes - A97401
-*  João Manuel Barbosa Lima - PG55701
-
-No âmbito da UC Análise Inteligente em Sistemas de "Big Data" do mestrado de Bioinformática, no ano letivo 2024-2025. Repositorio tem como objetivo armazenar os scripts e os dados das bases de dados apos o seu tratamento.
+Its purpose is to store scripts and processed database files after data treatment.
