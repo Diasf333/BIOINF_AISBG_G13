@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 
 # Função para carregar e preparar os dados
 def carregar_dados(arquivo):
-    print(f"Carregando dados do arquivo {arquivo}...")
+    print(f"A carregar dados do arquivo {arquivo}...")
     try:
-        df = pd.read_csv("C:/Users/BioInf_Andre/OneDrive - Universidade do Minho/Documentos/pisa_2006-2018.csv")
+        df = pd.read_csv("C:/Users/User/Documentos/pisa_2006-2018.csv")
         print(f"Dataset carregado com sucesso. Formato: {df.shape}")
         return df
     except FileNotFoundError:
@@ -21,7 +21,7 @@ def carregar_dados(arquivo):
 
 # Função para converter valores NA para NaN do pandas
 def tratar_na_valores(df):
-    print("Convertendo valores 'NA' para NaN...")
+    print("A converter valores 'NA' para NaN...")
     df_processado = df.copy()
     # Converte strings 'NA' para valores NaN do pandas
     df_processado.replace('NA', np.nan, inplace=True)
@@ -52,7 +52,7 @@ def preparar_dados_modelo(df):
 
 # Função para treinar o modelo de machine learning
 def treinar_modelo(df_modelo):
-    print("Treinando modelo de RandomForest...")
+    print("A treinar modelo de RandomForest...")
     
     # Filtra apenas as linhas com Score não-nulo para treinar o modelo
     mask_treino = df_modelo['Score'].notna()
@@ -92,7 +92,7 @@ def preencher_valores_ausentes(df_original, df_modelo, modelo):
         print("Não há valores ausentes para preencher.")
         return df_preenchido
     
-    print(f"Preenchendo {na_count} valores ausentes...")
+    print(f"A preencher {na_count} valores ausentes...")
     
     # Prepara os dados para predição
     X_pred = df_modelo.loc[mask_na, ['Year', 'Subject_encoded', 'Country_encoded']]
@@ -138,9 +138,9 @@ def main():
         # Preenche os valores ausentes
         df_preenchido = preencher_valores_ausentes(df_original, df_modelo, modelo)
         
-        # Salva o resultado em um novo arquivo
-        df_preenchido.to_csv("C:/Users/BioInf_Andre/OneDrive - Universidade do Minho/Documentos/pisa_imputed.csv", index=False)
-        print(f"Dataset com valores preenchidos salvo como '{arquivo_saida}'")
+        # Guarda o resultado num novo arquivo
+        df_preenchido.to_csv("C:/Users/User/Documentos/pisa_imputed.csv", index=False)
+        print(f"Dataset com valores preenchidos guardado como '{arquivo_saida}'")
         
         # Mostra estatísticas
         total_linhas = len(df_original)
