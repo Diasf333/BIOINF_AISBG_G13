@@ -1,5 +1,5 @@
 ML_ainda_mais_diversificado.py serve para prever e preencher automaticamente os valores ausentes nos resultados do PISA, permitindo análises mais completas e confiáveis dos dados.
 
-O ML_again.py preenche automaticamente valores ausentes num dataset, preservando a coerência dos dados ao usar métodos estatísticos avançados (KNN) e garantindo que os resultados finais mantenham um formato adequado para análise.
+O ML_GDP_PISA.py preenche automaticamente valores ausentes num dataset, preservando a coerência dos dados ao usar métodos estatísticos avançados (KNN) e garantindo que os resultados finais mantenham um formato adequado para análise.
 
-Principal diferença, o ML_ainda_mais_diversificado.py é usado no dataset do PISA test, no entanto o ML_again.py é usado no dataset final, em que houve cruzamento dos datasets de PISA e GDP PPP.
+Principal diferença, o ML_ainda_mais_diversificado.py é usado no dataset do PISA test, no entanto o ML_GDP_PISA.py é usado no dataset final, em que houve cruzamento dos datasets de PISA e GDP PPP.
