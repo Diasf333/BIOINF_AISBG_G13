@@ -1,7 +1,5 @@
-ML_PISA.py serve para prever e preencher automaticamente os valores ausentes nos resultados do PISA, permitindo análises mais completas e confiáveis dos dados.
+O notebook "pandas_transformations.ipynb" contém as transformações realizadas nos datasets, incluindo o processamento e a junção dos dados.
 
-O ML_GDP_PISA.py preenche automaticamente valores ausentes num dataset, preservando a coerência dos dados ao usar métodos estatísticos avançados (KNN) e garantindo que os resultados finais mantenham um formato adequado para análise.
+O notebook "pandas_vs_pyspark.ipynb" apresenta uma comparação de performance entre o Python com bibliotecas tradicionais (como Pandas) e o Python utilizando Spark (PySpark).
 
-Principal diferença, o ML_PISA.py é usado no dataset do PISA test, no entanto o ML_GDP_PISA.py é usado no dataset final, em que houve cruzamento dos datasets de PISA e GDP PPP.
-
-O script em R denominado R_script_creation_of_new_variables.R contém o código utilizado na Seção "Creation of New Variables" do trabalho.
+O notebook "db_export.ipynb" contém o código responsável pela exportação e armazenamento do dataset final em um banco de dados SQLite.
